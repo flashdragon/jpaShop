@@ -11,7 +11,7 @@ import java.util.List;
 @Transactional(readOnly = true)
 public class MemberService {
     
-    MemberRepository memberRepository;
+    private final MemberRepository memberRepository;
     /**
      * 회원가입
      */
